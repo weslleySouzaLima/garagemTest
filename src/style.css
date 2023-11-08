@@ -1,0 +1,142 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 120px;
+}
+
+header {
+    background-color: red;
+    padding: 20px;
+}
+
+header img {
+    max-width: 200px;
+}
+.whatsapp-link {
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.whatsapp-text {
+    color: black;
+    margin-right: 25px;
+    margin-top: 10px; 
+}
+
+.whatsapp-icon {
+    max-width: 50px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+    padding: 5px 0;
+}
+
+main {
+    color: white;
+    padding: 20px;
+}
+
+.basic-info {
+    color: white;
+    padding: 20px;
+}
+
+.scroll-box {
+    max-height: 100px;
+    overflow: auto;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+.car-photos {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-photos {
+    display: flex;
+    position: relative;
+}
+
+.car-photos .car-img {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    height: 100%;
+}
+
+.car-photos .car-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.car-photos .left-button, .car-photos .right-button {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.car-photos .left-button {
+    left: 0;
+}
+
+.car-photos .right-button {
+    right: 0;
+}
+
+/* Estilos para tablets e dispositivos com largura média */
+@media (max-width: 1023px) and (min-width: 768px) {
+    header img {
+        max-width: 250px;
+    }
+
+    .car-photos {
+        height: 300px;
+    }
+
+    .car-photos .left-button, .car-photos .right-button {
+        width: 30px;
+        font-size: 20px;
+    }
+}
+
+/* Estilos para dispositivos móveis e telas pequenas */
+@media (max-width: 767px) {
+    header img {
+        max-width: 150px;
+    }
+
+    .car-photos {
+        height: 200px;
+    }
+
+    .car-photos .left-button, .car-photos .right-button {
+        width: 20px;
+        font-size: 16px;
+    }
+}
